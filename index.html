@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing Machine Interface</title>
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    
+    <div class="main-content">
+        <div class="container">
+            <h1 class="visually-hidden">Washing machine interface</h1>
+            <ul class="washing-mode-list">
+                <li class="washing-mode-item washing-mode-item-active">
+                    <a class="washing-mode-link" href="#">Synthetic</a>
+                </li>
+                <li class="washing-mode-item">
+                    <a class="washing-mode-link" href="#">Wool</a>
+                </li>
+                <li class="washing-mode-item">
+                    <a class="washing-mode-link" href="#">Denim</a>
+                </li>
+                <li class="washing-mode-item">
+                    <a class="washing-mode-link" href="#">Silk</a>
+                </li>
+                <li class="washing-mode-item">
+                    <a class="washing-mode-link" href="#">Linen</a>
+                </li>
+            </ul>
+            
+            <p class="washing-mode-notice">Loads should be under 8 poundes. It is recommended using neutral detergent to prevent damage to the cloth and to improve the washing results.</p>
+            
+            <div class="washing-mode-info">
+                <dl class="washing-mode-status">
+                    
+                    <button class="washing-mode-controller washing-mode-controller-prev" type="button">
+                        <img class="washing-mode-controller-img" src="./img/icon-arrow-left.svg" alt="Previous" width="24" height="24">
+                    </button>
+                    <button class="washing-mode-controller washing-mode-controller-next" type="button">
+                        <img class="washing-mode-controller-img" src="./img/icon-arrow-right.svg" alt="Next" width="24" height="24">
+                    </button>
+                    <button class="start-button" type="button">Start</button>
+                    
+                    <div class="washing-mode-status-item washing-mode-status-item-timer">
+                        <dt class="washing-mode-status-heading">Timer</dt>
+                        <dd class="washing-mode-status-value">45 min</dd>
+                    </div>
+                    <div class="washing-mode-status-item washing-mode-status-item-temperature">
+                        <dt class="washing-mode-status-heading">Temperature</dt>
+                        <dd class="washing-mode-status-value">Cold</dd>
+                    </div>
+                    <div class="washing-mode-status-item washing-mode-status-item-load">
+                        <dt class="washing-mode-status-heading">Load</dt>
+                        <dd class="washing-mode-status-value">Medium</dd>
+                    </div>
+                    
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

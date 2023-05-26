@@ -1,0 +1,189 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0; */
+    /* padding: 0; */
+    height: 100%;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #ff907c;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 790px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.washing-mode-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.washing-mode-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.washing-mode-link {
+    display: flex;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.washing-mode-link:hover {
+    opacity: 0.9;
+}
+
+.washing-mode-item-active .washing-mode-link {
+    opacity: 1;
+}
+
+.washing-mode-notice {
+    max-width: 500px;
+    margin-top: 0;
+    margin-bottom: 55px;
+    font-size: 14px;
+}
+
+.washing-mode-info {
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.washing-mode-status {
+    display: flex;
+    margin: 0;
+}
+
+.washing-mode-status-item {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.washing-mode-status-item-temperature {
+    background-color: #333;
+}
+
+.washing-mode-status-item-timer {
+    background-color: #444;
+}
+
+.washing-mode-status-item-load {
+    background-color: #222;
+}
+
+.washing-mode-status-heading {
+    margin: 0;
+    font-size: 18px;
+    color: #cc565a;
+}
+
+.washing-mode-status-value {
+    margin: 0;
+    font-size: 26px;
+}
+
+.start-button {
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fafafa;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 0;
+    background-color: #222;
+    transition: transform 0.3s ease;
+    transform: translateY(50%);
+}
+
+.start-button:hover {
+    transform: translateY(40%)
+}
+
+.washing-mode-controller {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    cursor: pointer;
+}
+
+.washing-mode-controller:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.washing-mode-controller:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.washing-mode-controller-prev {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.washing-mode-controller-next {
+    right: 0;
+    transform: translateX(100%);
+}
