@@ -153,6 +153,7 @@ img {
     border-radius: 5px;
     border: 0;
     background-color: #222;
+    cursor: pointer;
     transition: transform 0.3s ease;
     transform: translateY(50%);
 }
