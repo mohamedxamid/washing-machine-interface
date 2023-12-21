@@ -138,10 +138,16 @@ img {
     white-space: nowrap;
 }
 
-.start-button {
+.start-pause-wrapper {
     position: absolute;
     left: 25px;
     bottom: 0;
+    transform: translateY(50%);
+    transition: transform 0.3s ease;
+}
+
+.control-btn {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,11 +162,13 @@ img {
     border: 0;
     background-color: #222;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    transform: translateY(50%);
 }
 
-.start-button:hover {
+.control-btn--active {
+    z-index: 5;
+}
+
+.start-pause-wrapper:hover {
     transform: translateY(40%)
 }
 
@@ -171,6 +179,16 @@ img {
     background-color: rgba(255, 255, 255, 0.6);
     border: none;
     cursor: pointer;
+}
+
+.washing-mode-controller::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: 1;
 }
 
 .washing-mode-controller:hover {
@@ -274,7 +292,7 @@ img {
         height: 40px;
     }
 
-    .start-button {
+    .start-pause-wrapper {
         bottom: -40px;
         width: 100%;
         max-width: 200px;

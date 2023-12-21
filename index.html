@@ -21,23 +21,7 @@
     <div class="main-content">
         <div class="container">
             <h1 class="visually-hidden">Washing machine interface</h1>
-            <ul class="washing-mode-list">
-                <li class="washing-mode-item washing-mode-item-active">
-                    <a class="washing-mode-link" href="#">Synthetic</a>
-                </li>
-                <li class="washing-mode-item">
-                    <a class="washing-mode-link" href="#">Wool</a>
-                </li>
-                <li class="washing-mode-item">
-                    <a class="washing-mode-link" href="#">Denim</a>
-                </li>
-                <li class="washing-mode-item">
-                    <a class="washing-mode-link" href="#">Silk</a>
-                </li>
-                <li class="washing-mode-item">
-                    <a class="washing-mode-link" href="#">Linen</a>
-                </li>
-            </ul>
+            <ul class="washing-mode-list"></ul>
             
             <p class="washing-mode-notice">Loads should be under 8 poundes. It is recommended using neutral detergent to prevent damage to the cloth and to improve the washing results.</p>
             
@@ -50,7 +34,10 @@
                     <button class="washing-mode-controller washing-mode-controller-next" type="button">
                         <img class="washing-mode-controller-img" src="./img/icon-arrow-right.svg" alt="Next" width="24" height="24">
                     </button>
-                    <button class="start-button" type="button">Start</button>
+                    <div class="start-pause-wrapper">
+                        <button class="start-button control-btn control-btn--active" type="button">Start</button>
+                        <button class="pause-button control-btn" type="button">Pause</button>
+                    </div>
                     
                     <div class="washing-mode-status-item washing-mode-status-item-timer">
                         <dt class="washing-mode-status-heading">Timer</dt>
@@ -69,5 +56,7 @@
             </div>
         </div>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
